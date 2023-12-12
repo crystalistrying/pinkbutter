@@ -1,0 +1,859 @@
+body{	
+    background-image:linear-gradient(#F2DADF,#FFB7CE);
+    background-repeat: repeat-x;
+}
+.container>img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+*{			
+    margin:0;
+    padding:0;
+}	
+.container{
+    display: flex;
+    font-size: 14px;
+    height:100px;
+    position: relative;
+    min-width: 500px;
+    max-width: 100%;
+    border-bottom: 3px solid black;
+}
+.navbar{
+    height:35px;
+    padding: 0.5rem 1.5rem;
+    background:none;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+    margin-right: 5%;
+}
+.navlinks{
+    display:flex;
+    gap:2rem;
+}
+.navlinks, .dropdown li{
+    list-style:none;
+    height:100%;
+    padding:0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container a{
+    font-family:"Lucida Handwriting",sans-serif;
+    text-decoration: none;
+    color:#9E4244;
+}
+
+.dropdown{
+    position: absolute;
+    padding: 0.5rem 0;
+    margin:0.5rem -0.5rem;
+    background: antiquewhite;
+    color:black;
+    box-shadow:0 4px 12px black;
+    border-radius: 0.5em;
+    font-size:16px;
+    display:none;
+    z-index:99;
+}
+
+.navlink:hover{
+    text-decoration:underline;
+    font-weight:bold;
+    color:#d99b5c;		
+}
+.menu:hover .dropdown{
+    display:block;	
+}
+.menu a{
+    display:flex;
+}
+
+.dropdown li:hover{
+    background:black;
+    color:#fff;
+    border-radius:0.5rem;
+}            
+.navlink, .navlink menu{
+    text-align:center;
+}
+.cart{
+    margin-top:20px;
+    margin-left:95%;
+    width:50px;
+    height: auto;
+}
+/*Start of CSS for index*/
+.index_purpose{
+    background:rgba(218,165,220,0.4);
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom:2%;
+    margin-right:20%;
+    margin-left:20%;
+    padding:4%;
+    line-height:1.5;
+}
+.index_purpose>p{
+    font-size:18px;
+}
+.index_h1{
+    margin: 20px;
+    font-size:40px;
+}
+.index_table{
+    width:100%;
+    text-align: center;
+    margin: auto;
+    border-collapse:collapse;
+}
+.index_table td{
+    padding: 10px;
+    width:50%;
+}
+.index_name{
+    text-align:left;
+}
+.index_desc{
+    text-align:left;
+}
+.index_tr1{
+    background-color:rgba(252,148,175,0.5);
+}
+.index_tr2{
+    background-color:rgba(252,148,175,0.3);
+}
+.index_tr3{
+    background-color:rgba(252,148,175,0.6);
+}
+.index_img1{
+    margin:1%;
+    box-shadow: 8px 8px rgba(252,148,175,0.6);
+}
+.index_img2{
+    margin:1%;
+    box-shadow: 8px 8px rgba(252,148,175,0.5);
+}
+.index_img3{
+    margin:1%;
+    box-shadow: 8px 8px rgba(252,148,175);
+}
+.index_table td img{
+    outline: 15px solid rgba(255,255,255, 0.5);
+    outline-offset: -10px;
+}
+.index_slideshow_container{
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+}
+.index_posters{
+	width:100%;
+}
+/* Next & previous buttons */
+.index_prev, .index_next{
+      cursor: pointer;
+     position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 15px;
+      margin-top: -22px;
+      color: white;
+    font-family:sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+}
+.index_next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+}
+.index_prev:hover, .index_next:hover {
+      background-color: rgba(0,0,0,0.8);
+}
+.index_dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+}
+.active, .index_dot:hover {
+      background-color: #717171;
+}
+/* Fading animation */
+.fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+}
+@keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+}
+.index_disclaimer{
+    padding:1%;
+    text-align:left;
+    margin:2%;
+    margin-right:5%;
+    margin-left:76%;
+    background:url(images/stamp.jpg)center,url(images/pink_stamp.jpg);
+    background-blend-mode:overlay;
+    border:3px dashed black;
+}
+.index_dis{
+    font-weight:bold;
+}
+.news_news_image{
+    margin-top:3%;
+    margin-bottom:2%;
+    width:80%;
+    height:auto;
+    border-radius:20px;
+    box-shadow:2px 2px black;
+}
+.news_news{
+    margin:auto;
+    margin-right:25%;
+    margin-left:30%;
+    border-bottom:2px solid #CD853F;
+}
+.news_events,.news_date{
+    font-family:"times new roman",sans-serif;
+}
+.news_date{
+    color:#CD853F;
+}
+.news_description{
+    margin-top:2%;
+    margin-bottom:2%;
+
+}
+.news_brand{
+    font-style:italic;
+}
+/* Start of CSS for career form */
+.careers_form_job_form{
+    margin-top:2%;
+    margin-left:15%;
+}
+.careers_form_form{
+    margin-top:1%;
+    margin-bottom:1%;
+    font-size:17px;
+}
+.careers_form_drag_drop{
+    margin-right:30%;
+    padding:3%;
+    border:2px dashed black;
+    border-radius:10px;
+    background-color:
+    rgb(188, 230, 243)
+
+}
+.careers_form_submit{
+    float:right;
+    margin:2%;
+    padding:1%;
+    border-radius:20px;
+    font-weight:bold;
+}
+.careers_form_submit:hover{
+    transform:scale(1.05);
+}
+.careers_form_appli{
+    position:absolute;
+    top:30%;
+    left:76%;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    font-size:35px;
+    font-weight:bold;
+    font-family:'Times New Roman', sans-serif;
+}
+.careers_form_for{
+    position:absolute;
+    top:30%;
+    left:80%;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    font-size:35px;
+    font-weight:bold;
+    font-family:'Times New Roman', sans-serif;
+}
+/* End of CSS for career form */
+/* Start of CSS for products pages (4) */
+.product_header{
+    text-align: center;
+    color:  #9E4244;
+
+}
+
+.products{
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    line-height:0px;
+    width: 70%;
+}
+
+.product_image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.product_content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    text-align: center;
+}
+
+.product_content:hover{
+    opacity: 1;
+}
+.product_content h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    padding-top: 40%;
+}
+
+.product_content p{
+    font-size: 15px;
+    color: #FFB8C9;
+    padding-top: 5%;
+}
+
+/*End of CSS for products (4) */
+
+/* Start os CSS for footer */
+footer{
+    color:white;
+    margin-top:4%;
+    background-image:url(images/flower_footer.jfif);
+    background-repeat:no-repeat;
+    background-position:right;
+    background-color:black;
+    padding-top:2%;
+    padding-left:5%;
+    padding-bottom:2%;
+}
+footer a{
+    text-decoration:none;
+    color:white;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+.day{
+    margin-top:1%;
+}
+.time{
+    margin-bottom:1%;
+}
+address{
+    position:relative;
+    top:20px;
+    right:60px;
+}
+#myBtn{
+    display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color:#F2DADF;
+      color:black;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 4px;
+    font-size:30px;
+}
+#myBtn:hover {
+     background-color:#ffdfe6;
+}
+/* End of CSS for footer */
+/* Start of CSS for locations */
+.contact_title, .contact_bordertop, .contact_borderbtm{
+    color:#9E1443;
+    text-align:center;
+    }
+    
+.contact_desc{
+    font-size:20px;
+    line-height:1.6;
+    padding-left:20%;
+    padding-right:20%;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    }	
+.contact_table{
+    border-collapse: separate;
+    border-spacing: 25px;
+    text-align:left;
+    }
+.contact_address{
+    text-align:center;
+    }
+/* End of CSS for locations */
+/* Start of CSS for about us */
+.aboutus_title{
+    font-size:25px;
+    font-weight:bold;
+    color:#9E4244;
+    text-align:center;
+    }
+
+.aboutus_links a{
+    text-decoration:none;
+    }
+    
+.aboutus_links a, .links a:visited{
+    font-weight:bold;
+    text-decoration:none;
+    color:#9E4244;				
+    }
+    
+.aboutus_links a:hover{
+    text-decoration:underline;
+    text-decoration-color:#d99b5c;
+    cursor: pointer;
+    }
+
+.aboutus_desc{
+    font-size:20px;
+    text-align:center;
+    line-height:1.6;
+    width:50%;
+    margin:0 auto;
+    }
+
+.aboutus_table{
+    border-spacing:10px;
+    margin-left:auto;
+    margin-right:auto;
+    }		
+
+.aboutus_table img{
+    border:2px solid #A9A9A9;
+    }
+/* End of CSS for about us */
+/* Start of CSS for membership page */
+.membership_article{
+    font-size:17px;
+    }
+    
+.membership_row1{
+    width: 30%;
+    margin-left: 3%;
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    text-align:center;
+}
+
+.membership_r1,.membership_r2{
+    line-height:1.6;
+    margin:auto 0;
+}
+
+.membership_row2{
+    width:30%;
+    margin-left: 13%;
+    float:left;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+    
+}
+.membership_intro{
+    margin-top: 30px;
+    margin-bottom: 25px
+    }
+    
+.membership_intro,.membership_border{
+    text-align:center;
+    }
+    
+.membership_heading{
+    text-align:center;
+    color:#9E1443;
+}
+
+.membership_benefits,.membership_title{
+    font-size:19px;
+    font-weight:bold;
+    color:#51122C
+    }
+.membership_ol{
+    list-style-position:outside;
+}
+
+.membership_ol{
+    margin-left:25%;
+    width:50%;   
+}
+
+.membership_ul{
+    list-style-type: none;
+}
+
+.membership_step{
+    line-height:1.6;
+    margin-bottom:20px; 
+}
+
+.membership_list, .membership_hr{
+    clear:both;
+}
+
+.membership_hr{
+    border:1.5px solid #A9A9A9;
+    border-style:dashed;
+
+}
+
+.membership_intro2{
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 15px
+}
+
+.membership_link{
+    text-align:right;
+    margin-right:50px;
+}
+
+.membership_button{
+    background-color: rgb(122, 24, 70);
+    color:rgb(196, 173, 172);
+    border-radius:1em;
+    padding:10px;
+    padding-left:12px;
+    padding-right:12px;
+    text-decoration: none;
+}
+/* End of CSS for membership page */
+/* Start of CSS for preorder form */
+.preorder_h1{
+    font-family:"Times New Roman";
+    color:#9E1443;
+    text-align:center;
+}
+.preorder_inst{
+    text-align:center;
+    }
+
+legend{
+    text-align:center;  
+}
+
+.preorder_table{
+    margin:auto;
+}            
+
+.preorder_table td{
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+tr>td{
+    padding:5px;
+}
+
+.preorder_itemnum{
+    padding-left:6px;
+    padding-right:6px;
+}
+
+.preorder_itemname, .preorder_itemnum{
+    position:relative;
+    top:65px;
+}
+
+.preorder_creditems{
+    text-align:right;
+}
+
+.preorder_fieldset{
+    margin-bottom:20px;
+    border-color:black;
+    border-radius: 2em;
+    width:50%;
+    margin: 0 auto;
+}
+
+.preorder_rowwidth{
+    width:100px;
+    text-align:right;
+}
+
+fieldset>p{
+    text-align:center;
+}
+
+input{
+    background-color:#FDF2EC;
+    }
+    
+textarea{
+    padding-top:3px;
+    padding-left:5px;
+    background-color:#FDF2EC;
+    border:2px solid black;
+    resize:none;
+    }
+.preorder_article{
+    font-size:19px;
+    }
+    
+.preorder_form input[type=text]{
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:5px;
+    }    
+
+.preorder_form input[type=email]{
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:5px;
+    }
+    
+.preorder_form input[type=submit]{
+    padding:3px;
+    }
+    
+.preorder_form input[type=reset]{
+    padding:3px;
+    }
+    
+.preorder_form input[type=number]{
+    padding:3px;
+    }
+/* End of CSS for preorder Form */
+/* Start of CSS for Feedback Form */
+			
+.feedback_introduction{
+    line-height:1.6;
+    }
+    
+.feedback_article>p{
+    text-align:center;
+}
+
+.feedback_article{
+    font-size:19px;
+    }
+.thumb{
+        width: 8%;
+        height: 8%
+    }
+
+.feedback_heading{
+        font-size:27px;
+        text-align:center;
+        color:#9E1443;
+    }
+.comments td{
+        padding:5px
+    }
+
+.feedback_submission{
+        text-align: center;
+    }
+
+
+
+legend{
+    text-align:center;  
+}
+
+.feedback_table{
+    margin:auto;
+}            
+
+.feedback_table td{
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+tr>td{
+    padding:5px;
+}
+
+.feedback_itemnum{
+    padding-left:6px;
+    padding-right:6px;
+}
+
+.feedback_itemname{
+    position:relative;
+    top:65px;
+}
+
+.feedback_fieldset{
+    margin-bottom:20px;
+    border-color:black;
+    border-radius: 2em;
+    width:50%;
+    margin: 0 auto;
+}
+
+.feedback_rowwidth{
+    width:40px;
+    text-align:right;
+}
+
+fieldset>p{
+    text-align:center;
+}
+
+input{
+    background-color:#FDF2EC;
+    }
+
+textarea{
+    padding-top:3px;
+    padding-left:5px;
+    background-color:#FDF2EC;
+    border:2px solid black;
+    resize:none;
+    }
+
+.feedback_buttons{
+    padding:10px;
+    text-align: center;
+}
+
+.feedback_input{
+    text-align: left;
+    position: relative;
+    left:12px;
+    padding:10px 
+}
+
+.feedback_form input[type=text]{
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:5px;
+    }
+    
+.feedback_form input[type=select]{
+    padding:3px 0px 3px 5px;
+    }
+    
+.feedback_buttons input[type=submit]{
+    padding:3px;
+    }
+    
+.feedback_buttons input[type=reset]{
+    padding:3px;
+    }
+    
+.feedback_form input[type=range]{
+    padding:5px;
+    }
+/* End of CSS for feedback form */
+/* Start of CSS for Career Form */
+.careers_requirement{
+    position:relative;
+}
+.careers_career{
+    display:block;
+    margin:auto;
+    box-shadow: 8px 8px rgba(0, 0, 0);
+    outline: 15px solid rgba(255, 150, 183, 0.5);
+    outline-offset: -10px;
+}
+.careers_rules{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    line-height:2;
+    font-size:20px;
+}
+.careers_link{
+    padding:4px;
+    font-weight:bold;
+    border-radius:5px;
+	color:#fa9fbc;
+    text-decoration:none;
+	background-color:#E1E1E1;
+	border:1px solid black;
+}
+.careers_link:hover{
+    background-color:rgb(223, 223, 223);
+    padding:5px;
+	color:#e15481;
+}
+.careers_feather_pen{
+    width:650px;
+    height:auto;
+    position:absolute;
+    top:60%;
+    left:55%;
+}
+/* End of CSS for Career Form */
+/* Start of CSS for membership Form */
+.membership_form{
+    padding: 10% 15%;
+    background-image: url(membership_form_bg.jpg);
+    background-repeat:repeat;
+
+}
+.membership_heading{
+    font-family: Lucida;
+    color: #9E4244;
+    font-size: 29px;
+    text-align: center;
+}
+.form_options{
+    height: 65px;
+}
+
+.membership_form p{
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+.form_list_text{
+    font-size: 19px;
+    width: 101%;
+}
+
+.form_button{
+    height:50px; 
+    width:240px; 
+    font-size:19px;
+    background-color: #9E4244; 
+    color:white; 
+    border:none;
+}
+/*End of CSS for membership Form */
+

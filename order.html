@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+<!--Description: pink butter order form-->
+<!--Author: Michael Wong-->
+<!--Date:  -->
+<!--Validated OK: -->
+
+    <head>
+        <title>Pre-order Form - Pink Butter</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Crystal">
+		<meta name="description" content="About Pink Butter">
+		<meta name="keywords" content="Pink, butter, preorder, form, cakes, bread, pastries">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>    
+    
+    <body>
+
+	<header>
+		<div class="container">
+			<img src="images/logo.jpeg" alt="Pink Butter" title="Pink Butter">
+			<!--Start of Navbar-->
+            <nav class="navbar">
+				<ul class="navlinks">
+					<li class="navlink"><a href="index.html" target="_self">Home</a></li>
+					<li>|</li>
+					<li class="navlink menu"><a href=" " target="_self">About Us!</a>
+					<ul class="dropdown">
+						<li><a href="aboutus.html" target="_self">OUR STORY</a></li>
+						<li><a href="pinkcontact.html" target="_self">LOCATION</a></li>
+						<li><a href="careers.html" target="_self">CAREERS</a></li>
+					</ul>
+					</li>
+					<li>|</li>
+					<li class="navlink menu"><a href=" " target="_self">Products</a>
+					<ul class="dropdown">
+						<li><a href="BAKERY_COLLECTION.html" target="_self">BAKERY COLLECTIONS</a></li>
+						<li><a href="CAKE_COLLECTION.html" target="_self">CAKES COLLECTIONS</a></li>
+						<li><a href="PASTRIES_COLLECTION.html" target="_self">PATISSERIE COLLECTIONS</a></li>
+						<li><a href="DRINKS_COLLECTION.html" target="_self">DRINKS COLLECTIONS</a></li>
+					</ul>
+					</li>
+					<li>|</li>
+					<li class="navlink"><a href="news_and_events.html" target="_self">Events</a></li>
+					<li>|</li>
+                    <li class="navlink"><a href="membership.html" target="_self">Memberships</a></li>
+					<li>|</li>
+					<li class="navlink"><a href="feedback.html" target="_self">Feedback</a></li>
+				</ul>
+			</nav>
+			<!--End of Navbar-->
+		</div>
+	</header>
+
+    <article>
+
+		<h1 class="preorder_h1">𓆩⟡𓆪</h1>
+        <h1 class="preorder_h1">∘₊✧──────✧₊∘ Pink Butter's Preorder Form ∘₊✧──────✧₊∘</h1>
+
+		
+		<br>
+		
+        <p class="preorder_inst">You can order select products from our story here and have it delivered to your door! Happy shopping!</p>
+		<p class="preorder_inst">₊˚ ✧ ‿︵‿୨୧‿︵‿ ✧ ₊˚</p>
+            <br>
+
+        <form class="preorder_form" name="order" method="post" action="mailto:pinkbutterbakes@gmail.com" enctype="text/plain">
+            <fieldset class="preorder_fieldset">
+                <legend>Credentials</legend>
+                    <table class="preorder_table">
+                            <tr>
+                                <td>1.</td>
+                                <td class="preorder_creditems"><label for="Name">Name:</label></td>
+                                <td><input type="text" id="Name" size="40" maxlength="100" placeholder="Your Name" required="required"></td>
+                            </tr>
+
+                            <tr>
+                                <td>2.</td>
+                                <td class="preorder_creditems"><label for="phonenumber">Phone Number:</label></td>
+                                <td><input type="text" name="PhoneNumber" id="phonenumber" size ="40" placeholder="(+60)12345678" required="required"></td>
+                            </tr>
+
+                            <tr>
+                                <td>3.</td>
+                                <td class="preorder_creditems"><label for="email">E-mail:</label></td>
+                                <td><input type="email" name="Email" id="email" required="required" size="40"></td>
+                            </tr>
+
+                            <tr>
+                                <td>4.</td>
+                                <td class="preorder_creditems"><label for="Address">Delivery Address:</label></td>
+                                <td><textarea name="Address" id="Address" rows="3" cols="40" required="required"></textarea></td>
+                            </tr>
+                    
+                            <tr>
+                                <td>5.</td>
+                                <td class="preorder_creditems">Payment:</td>
+                                <td>
+                                    <input type="radio" name="Payment" id="cash" value="Cash"><label for="cash">Cash</label>
+                                    <input type="radio" name="Payment" id="credit" value="Credit"><label for="credit">Credit</label>
+                                </td>
+                            </tr>
+                        </table>
+            </fieldset>
+
+            <fieldset class="preorder_fieldset">
+                <legend>Order List</legend>
+                    <table class="preorder_table" >
+                        <tr>
+                            <td class="preorder_itemnum">1.</td>
+                            <td class="preorder_itemname">Breads:</td>
+                            <td>
+                                <table >
+                        
+                                    <tr>
+                                        <td><label for="Milk_Bread"><input type="checkbox" name="Milk_Bread" id="Milk_Bread">  Milk Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="French_Brioche"><input type="checkbox" name="French_Brioche" id="French_Brioche">  French Brioche</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="Banana_Bread"><input type="checkbox" name="Banana_Bread" id="Banana_Bread">  Banana Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Baguette"><input type="checkbox" name="Baguette" id="Baguette">  Baguette</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="Challah_Bread"><input type="checkbox" name="Challah_Bread" id="Challah_Bread">  Challah Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Semolina_Bread"><input type="checkbox" name="Semolina_Bread" id="Semolina_Bread">  Semolina Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="Rye_Bread"><input type="checkbox" name="Rye_Bread" id="Rye_Bread">  Rye Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Focaccia_Bread"><input type="checkbox" name="Focaccia_Bread" id="Focaccia_Bread">  Focaccia Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="Garlic_Pull_Apart"><input type="checkbox" name="Garlic_Pull_Apart" id="Garlic_Pull_Apart">  Garlic Cheese Pull-apart</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Cream_Cheese_Garlic_Bread"><input type="checkbox" name="Cream_Cheese_Garlic_Bread" id="Cream_Cheese_Garlic_Bread">  Cream Cheese Garlic Bread</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="preorder_itemnum">2.</td>
+                            <td class="preorder_itemname">Cakes:</td>
+                            <td>
+                                <table >
+                        
+                                    <tr>
+                                        <td><label for="Pink_Strawberry_Cake"><input type="checkbox" name="Pink_Strawberry_Cake" id="Pink_Strawberry_Cake">  Pink Strawberry Ball</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Blue_Petals_Cake"><input type="checkbox" name="Blue_Petals_Cake" id="Blue_Petals_Cake">  Blue Petals Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="Swan_Lake_Cake"><input type="checkbox" name="Swan_Lake_Cake" id="Swan_Lake_Cake">  Swan Lake Dream</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="Tulip_Ballet_Cake"><input type="checkbox" name="Tulip_Ballet_Cake" id="Tulip_Ballet_Cake">  Tulip Ballet</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="Pink_Princess_Cake"><input type="checkbox" name="Pink_Princess_Cake" id="Pink_Princess_Cake">  Pink Princess Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="burnt_cheesecake"><input type="checkbox" name="burnt_cheesecake" id="burnt_cheesecake">  Burnt CheeseCake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="Petal_Heart"><input type="checkbox" name="Petal_Heart" id="Petal_Heart">  Petal Heart Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="mint_choc"><input type="checkbox" name="mint_choc" id="mint_choc">  Mint Chocolate Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><label for="choc_mousse"><input type="checkbox" name="choc_mousse" id="choc_mousse">  Chocolate Mousse</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="strawberry_sponge"><input type="checkbox" name="strawberry_sponge" id="strawberry_sponge">  Strawberry Sponge Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="Vintage_Strawberry"><input type="checkbox" name="Vintage_Strawberrys" id="Vintage_Strawberry">  Vintage Strawberry Cake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="slice_cheesecake"><input type="checkbox" name="slice_cheesecake" id="slice_cheesecake">  Cheesecake Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="matcha_cheese"><input type="checkbox" name="matcha_cheese" id="matcha_cheese">  Matcha Cheesecake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="matcha_slice"><input type="checkbox" name="matcha_slice" id="matcha_slice">  Matcha Cream Cheese Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="egg_slice"><input type="checkbox" name="egg_slice" id="egg_slice">  Egg Cream Cheese Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="oreo_slice"><input type="checkbox" name="oreo_slice" id="oreo_slice">  Oreo Cream Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="oreo_nonbake"><input type="checkbox" name="oreo_nonbake" id="oreo_nonbake">  Nonbake Cheesecake Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="lemon_zest"><input type="checkbox" name="lemon_zest" id="lemon_zest">  Lemon Zest Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="crumb_slice"><input type="checkbox" name="crumb_slice" id="crumb_slice">  Matcha Crumb Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="vanilla_cup"><input type="checkbox" name="vanilla_cup" id="vanilla_cup">  Vanilla Cupcake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="strawberry_cup"><input type="checkbox" name="strawberry_cup" id="strawberry_cup">  Strawberry Cupcake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="choc_cup"><input type="checkbox" name="choc_cup" id="choc_cup">  Chocolate Cupcake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="velvet_cup"><input type="checkbox" name="velvet_cup" id="velvet_cup">  Red Velvet Cupcake</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+            
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="itemnum">3.</td>
+                            <td class="itemname">Pastries:</td>
+                            <td>
+                                <table >
+                        
+                                    <tr>
+                                        <td><label for="apple_pie"><input type="checkbox" name ="apple_pie" id="apple_pie">  Apple Pie</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="fruit_pie"><input type="checkbox" name ="fruit_pie" id="fruit_pie">  Fruit Pie</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="marshmellow_pie"><input type="checkbox" name="marshmellow_pie" id="marshmellow_pie">  Marshmellow Chocobites</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="cream_puff"><input type="checkbox" name="cream_puff" id="cream_puff">  Cream Puff</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="choco_pastry"><input type="checkbox" name="choco_pastry" id="choco_pastry">  Chocolate Crumble</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="signature_pie"><input type="checkbox" name="signature_pie" id="signature_pie">  Signature Pie Slice</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="mango_tart"><input type="checkbox" name="mango_tart" id="mango_tart">  Mango Tart</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="cookie_set"><input type="checkbox" name="cookie_set" id="cookie_set">  Cookie Combo Set</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="mac_cookie"><input type="checkbox" name="mac_cookie" id="mac_cookie">  Macademia Cookies</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="choc_mars_cookie"><input type="checkbox" name="choc_mars_cookie" id="choc_mars_cookie">  Marshmellow Lava Cookies</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="choc_chip"><input type="checkbox" name="choc_chip" id="choc_chip">  Choc Chip Cookies</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="lotus_cookie"><input type="checkbox" name="lotus_cookie" id="lotus_cookie">  Lotus Biscoff Cookie</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                
+                                </table>
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td class="preorder_itemnum">4.</td>
+                            <td class="preorder_itemname">Beverages:</td>
+                            <td>
+                                <table >
+                        
+                                    <tr>
+                                        <td><label for="fruit_punch"><input type="checkbox" name ="fruit_punch" id="fruit_punch">  Fruit Punch &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; </label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="iced_coffee"><input type="checkbox" name ="iced_coffee" id="iced_coffee">  Cafe Latte</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="matcha_latte"><input type="checkbox" name="matcha_latte" id="matcha_latte">  Matcha Latte</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="vanilla_shake"><input type="checkbox" name="vanilla_shake" id="vanilla_shake">  Vanilla Shake &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;  </label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label for="pink_drink"><input type="checkbox" name="pink_drink" id="pink_drink">  Sakura Fission</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+
+                                        <td><label for="flower_tea"><input type="checkbox" name="flower_tea" id="flower_tea">  Flower Tea</label></td>
+                                        <td class="preorder_rowwidth"><input type=number name=quantity min="0" max="5" value="0"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                       
+                    </table>
+                    
+                    <p>
+                        <input class="preorder_submit" type="submit" value=" Order ">
+                        <input class="preorder_reset" type="reset" value=" Reset ">
+                    </p>
+					<br>
+                </fieldset>
+            
+        </form>
+
+		
+		<br>
+		
+		
+    </article>
+	
+<!--Start of Footer-->
+<footer>
+    <p class="time"><strong>Opening hours:</strong></p>
+    <p class="day">Monday - Friday</p>
+    <p class="time">9.00 am - 5.00 pm</p>
+    <p class="day">Saturday</p>
+    <p class="time">10.00 am - 5.00 pm</p>
+    <p class="day">Sunday</p>
+    <p class="time">10.00 am - 3.00 pm</p>
+    <address><a href="aboutus.html">&copy;Pink Butter</a> aest. 2021 | Last Updated: 12/12/2023</address>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+</footer>
+<!--End of Footer-->
+<script src="back_to_top.js"></script>
+<script src="slideshow.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Membership Form - Pink Butter</title>
+            <meta charset="utf-8">
+            <meta name="author" content="Michael">
+            <meta name="membership_form" content="Pink Butter Membership Form">
+            <meta name="keywords" content="Pink, butter, membership, join, member">
+            
+            <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+		
+		
+            <div class="container">
+                <img src="images/logo.jpeg" alt="Pink Butter" title="Pink Butter">
+                <!--Start of Navbar-->
+                <nav class="navbar">
+                    <ul class="navlinks">
+                        <li class="navlink"><a href="index.html" target="_self">Home</a></li>
+                        <li>|</li>
+                        <li class="navlink menu"><a href=" " target="_self">About Us!</a>
+                        <ul class="dropdown">
+                            <li><a href="aboutus.html" target="_self">OUR STORY</a></li>
+                            <li><a href="pinkcontact.html" target="_self">LOCATION</a></li>
+                            <li><a href="careers.html" target="_self">CAREERS</a></li>
+                        </ul>
+                        </li>
+                        <li>|</li>
+                        <li class="navlink menu"><a href=" " target="_self">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="BAKERY_COLLECTION.html" target="_self">BAKERY COLLECTIONS</a></li>
+                            <li><a href="CAKE_COLLECTION.html" target="_self">CAKES COLLECTIONS</a></li>
+                            <li><a href="PASTRIES_COLLECTION.html" target="_self">PATISSERIE COLLECTIONS</a></li>
+                            <li><a href="DRINKS_COLLECTION.html" target="_self">DRINKS COLLECTIONS</a></li>
+                        </ul>
+                        </li>
+                        <li>|</li>
+                        <li class="navlink"><a href="news_and_events.html" target="_self">Events</a></li>
+                        <li>|</li>
+                        <li class="navlink"><a href="membership.html" target="_self">Memberships</a></li>
+                        <li>|</li>
+                        <li class="navlink"><a href="feedback.html" target="_self">Feedback</a></li>
+                    </ul>
+                </nav>
+                <!--End of Navbar-->
+            </div>
+                        
+            <hr>
+        </header>
+
+        <article>
+
+            <a href="order.html" target="_self"><img class="cart" src="images/cart.png" alt="order"></a>
+            <h1 class="membership_heading">𓆩⟡𓆪</h1>
+            <h1 class="membership_heading">∘₊✧──────✧₊∘ Submit Your Interest ∘₊✧──────✧₊∘ </h1>
+            
+            <br>
+            <form class="membership_form" name="memebership_form" method="post" action="mailto:pinkbutterbakes@gmail.com" enctype="text/plain">
+                
+
+                <p><label for="Name">Your Full Name *</label></p>
+                <p><input type="text" id="Name" size="100" maxlength="100" required="required" class="form_options"></p>
+
+                <br>
+                <p>Gender *</p>
+                <p>
+                    <input type="radio" name="Gender" id="male" value="Male"><label for="male">Male</label>
+                    <input type="radio" name="Gender" id="female" value="Female"><label for="female">Female</label>
+                </p>
+
+                <br>
+                <p><label for="dob">Date Of Birth</label></p>
+                <p><input type="text" id="dob" size="150" maxlength="200" class="form_options"></p>
+
+                <br>
+                <p><label for="contact">Contact Number (Mobile) *</label></p>
+                <p><input type="text" id="contact" size="150" maxlength="200" required="required" class="form_options"></p>
+
+                <br>
+                <p><label for="education">Education Background</label></p>
+                <p>
+                    <select name="education" id="education" class="form_options form_list_text"> 
+                        <option value="Secondary" selected="selected" class="form_list_text">Secondary</option>
+                        <option value="Diploma" class="form_list_text">Diploma</option>
+                        <option value="Professional" class="form_list_text">Professional</option>
+                        <option value="Degree" class="form_list_text">Degree</option>
+                        <option value="Master & Above" class="form_list_text">Master & Above</option>
+                    </select>
+                </p>
+
+                <br>
+                <p>Do you have any experience in F & B?</p>
+                <p><input type="radio" name="experience" id="yes" value="Yes"><label for="yes">Yes</label></p>
+                <p><input type="radio" name="experience" id="no" value="No"><label for="no">No</label></p>
+
+                <br>
+                <p><label for="description">Please describe your working experience and duration</label></p>
+                <p><textarea name="description" id="description" rows=15 cols=138></textarea></p>
+
+
+                <br>
+                <p>
+                    <input  type="submit" class="form_button" value="Submit Your Application">
+                </p>
+
+            </form>
+        </article>
+        <footer>
+            <p class="time"><strong>Opening hours:</strong></p>
+            <p class="day">Monday - Friday</p>
+            <p class="time">9.00 am - 5.00 pm</p>
+            <p class="day">Saturday</p>
+            <p class="time">10.00 am - 5.00 pm</p>
+            <p class="day">Sunday</p>
+            <p class="time">10.00 am - 3.00 pm</p>
+            <address><a href="aboutus.html">&copy;Pink Butter</a> aest. 2021 | Last Updated: 12/12/2023</address>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+        </footer>
+        <!--End of Footer-->
+        <script src="back_to_top.js"></script>
+        <script src="slideshow.js"></script>
+
+    </body>
+
+</html>
